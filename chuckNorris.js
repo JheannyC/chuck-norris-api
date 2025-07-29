@@ -7,7 +7,7 @@ async function getRandomJoke() {
             const value = joke.value;
             return `Random joke: ${value}`;
     } catch (error) {
-        console.log("Erro", error)
+        console.log("An unexpected error occurred. Please try again later.", error)
     }
 }
 
@@ -19,7 +19,7 @@ async function getRandomJokeByCategory(category) {
             const randomJoke = joke.value;
             return `Choosed category: ${categories}\nRandom joke: ${randomJoke}`;
     } catch (error) {
-          console.log("Erro", error)
+          console.log("An unexpected error occurred. Please try again later.", error)
     }
 }
 
@@ -33,7 +33,7 @@ async function getAllCategories() {
             return categories.join(', ');
        
     } catch (error) {
-          console.log("Erro", error)
+          console.log("An unexpected error occurred. Please try again later.", error)
     }
 }
 
