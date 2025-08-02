@@ -37,19 +37,8 @@ async function getAllCategories() {
     }
 }
 
-async function main() {
-    const joke = await getRandomJoke();
-    const joke2 = await getRandomJokeByCategory("animal");
-    const joke3 = await getAllCategories();
-
-    console.log("Exibindo piada aleatória:")
-    console.log(joke)
-
-    console.log("\nExibindo categoria + piada aleatória:")
-    console.log(joke2)
-
-    console.log("\nCategorias")
-    console.log(joke3);
+module.exports = {
+    getRandomJoke,
+    getRandomJokeByCategory,
+    getAllCategories
 }
-
-main();
